@@ -4,9 +4,7 @@ import ReactDOM from "react-dom";
 import Main from "./output/Main";
 
 function main() {
-  const myComponent = React.createElement(Main.example, { label: "Increment" });
-
-  ReactDOM.render(myComponent, document.getElementById("app"));
+  Main.main("HIIII")()
 }
 
 if (module.hot) {
